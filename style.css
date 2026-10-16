@@ -26,7 +26,7 @@ ul{list-style-type: none;
    background: #4D8DBA;
    height: 70px;
    width: 100%;
-   border: 2px solid black;
+   border: 0.5px solid black;
    border-radius:15px;
   }
 li{display:inLine;padding:4px;
