@@ -6,7 +6,10 @@ html {
 h1{color:yellow; 
       text-align:center; 
       font-size:40px;
-      font-family: Arial
+      font-family: Arial;
+   background: #4D8DBA;
+   width: 100%;
+   height:20%
   }
 p{color:#3368A0; 
   font-size:15px;
@@ -16,12 +19,6 @@ p{color:#3368A0;
 
 html{
   background-color:blue;
-}
-
-body{
-  border:5px solid white;
-  border-radius:25px;
-  background-color:#66A3BF;
 }
 
 ul{list-style-type: none;
@@ -38,7 +35,7 @@ li{display:inLine;
           }
 img{width: 70px;
     position: absolute !important;
-    right: 50px !important;
+    left: 20px !important;
     top: 30px;
    }
   
