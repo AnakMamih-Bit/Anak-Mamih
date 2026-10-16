@@ -22,12 +22,15 @@ body{
   border-radius:25px;
   background-color:#66A3BF;
 ul{list-style-type: none;
+   background: white;
+   height: 70px;
+   width: 100%;
   }
 li{display:inLine;padding:4px;
   }
-img{width:30px;
-    position:absolute !important;
-    right:180px !important;
-    top:10px;
+img{width: 30px;
+    position: absolute !important;
+    right: 180px !important;
+    top: 10px;
    }
   
