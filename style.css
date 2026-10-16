@@ -34,9 +34,6 @@ body{
            padding:4px;
            color: #8E9162;
            font-size: 40px;
-           border-left: 2px solid black;
-           border-right: 2px solid black;
-           height: 100% !important;
           }
 img{width: 70px;
     position: absolute !important;
