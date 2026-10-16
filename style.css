@@ -22,7 +22,7 @@ html{
 }
 
 ul{list-style-type: none;
-   background: #4D8DBA;
+   background: gray;
    height: 70px;
    width: 100%;
    border: 0.5px solid black;
