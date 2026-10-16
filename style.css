@@ -21,4 +21,7 @@ body{
   border:5px solid white;
   border-radius:25px;
   background-color:#66A3BF;
-}
+ul{list-style-type: none;
+  }
+li{display:inLine;padding:4px;
+  }
