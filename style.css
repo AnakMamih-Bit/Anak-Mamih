@@ -22,18 +22,19 @@ body{
   border:5px solid white;
   border-radius:25px;
   background-color:#66A3BF;
-ul{list-style-type: none;
+.navbar{list-style-type: none;
    background: #4D8DBA;
    height: 70px;
    width: 100%;
    border: 0.5px solid black;
    border-radius:15px;
   }
-li{display:inLine;padding:4px;
+.navbar li{display:inLine;padding:4px;
    color: #8E9162;
    font-size: 40px;
    border-left: 2px solid black;
    border-right: 2px solid black;
+   height: 100%;
   }
 img{width: 70px;
     position: absolute !important;
