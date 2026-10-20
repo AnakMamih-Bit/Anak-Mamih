@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes</title>
+    <title>Anak Mamih</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <script src="./script.js"></script>
-    <img src='anakmamihlogo.png' alt="logo anak mamih">
-    <h1><i><B>Anak Mamih</B></i></h1>
-    <ul>
-      <li><a>Beranda</a></li>
-      <li><a>Desain</a></li>
-      <li>Produk</li>
-    </ul>
-    <p>Logo Anak Mamih menggambarkan pendidikan yang tumbuh dari kasih sayang dan dukungan keluarga. Tiga sosok anak melambangkan karakter dan potensi yang beragam, sementara buku terbuka menjadi simbol ilmu dan wawasan. Tunas yang tumbuh dari buku mewakili harapan serta potensi anak yang berkembang melalui belajar, dan hati di halaman buku menunjukkan bahwa kasih sayang menjadi bagian penting dalam proses tersebut. Warna navy memberi kesan tepercaya dan berwibawa, sedangkan warna krem menghadirkan nuansa hangat. Bentuk lingkaran mencerminkan kebersamaan dan dukungan yang berkelanjutan. Secara keseluruhan, logo ini menyampaikan keyakinan bahwa setiap anak dapat tumbuh dan meraih masa depan yang baik dengan ilmu, kasih sayang, dan dukungan keluarga.</p>
-    
+    <header class="topbar">
+      <a class="brand" href="#beranda">
+        <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
+        <span>Anak Mamih</span>
+      </a>
+      <nav aria-label="Menu utama">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#desain">Desain</a></li>
+          <li><a href="#produk">Produk</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-logo">
+          <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
+        </div>
+        <div class="hero-text">
+          <h1>Anak Mamih</h1>
+          <p class="lead">Setiap anak dapat tumbuh dan meraih masa depan yang baik dengan ilmu, kasih sayang, dan dukungan keluarga.</p>
+          <a class="btn" href="#desain">Lihat makna logo</a>
+        </div>
+      </section>
+
+      <section class="desain" id="desain">
+        <h2>Makna logo</h2>
+        <p class="intro">Logo Anak Mamih menggambarkan pendidikan yang tumbuh dari kasih sayang dan dukungan keluarga.</p>
+
+        <dl class="makna">
+          <div>
+            <dt>Tiga sosok anak</dt>
+            <dd>Melambangkan karakter dan potensi yang beragam.</dd>
+          </div>
+          <div>
+            <dt>Buku terbuka</dt>
+            <dd>Simbol ilmu dan wawasan.</dd>
+          </div>
+          <div>
+            <dt>Tunas dari buku</dt>
+            <dd>Harapan serta potensi anak yang berkembang melalui belajar.</dd>
+          </div>
+          <div>
+            <dt>Hati di halaman buku</dt>
+            <dd>Kasih sayang menjadi bagian penting dalam proses belajar.</dd>
+          </div>
+          <div>
+            <dt>Navy dan krem</dt>
+            <dd>Navy memberi kesan tepercaya dan berwibawa, krem menghadirkan nuansa hangat.</dd>
+          </div>
+          <div>
+            <dt>Bentuk lingkaran</dt>
+            <dd>Mencerminkan kebersamaan dan dukungan yang berkelanjutan.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="produk" id="produk">
+        <h2>Produk</h2>
+        <p>Produk Anak Mamih akan ditampilkan di sini.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Anak Mamih</p>
+    </footer>
   </body>
 </html>
