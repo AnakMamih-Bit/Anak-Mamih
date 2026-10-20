@@ -6,7 +6,7 @@
     <title>Anak Mamih</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
   </head>
@@ -19,64 +19,141 @@
       <nav aria-label="Menu utama">
         <ul>
           <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#pilar">Pilar</a></li>
           <li><a href="#desain">Desain</a></li>
           <li><a href="#produk">Produk</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="#kontak">Hubungi kami</a>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="beranda">
-        <div class="hero-logo">
-          <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
-        </div>
+        <span class="blob b1" aria-hidden="true"></span>
+        <span class="blob b2" aria-hidden="true"></span>
+        <span class="blob b3" aria-hidden="true"></span>
+
         <div class="hero-text">
+          <p class="badge">🌱 Belajar tumbuh bersama keluarga</p>
           <h1>Anak Mamih</h1>
           <p class="lead">Setiap anak dapat tumbuh dan meraih masa depan yang baik dengan ilmu, kasih sayang, dan dukungan keluarga.</p>
-          <a class="btn" href="#desain">Lihat makna logo</a>
+          <div class="actions">
+            <a class="btn" href="#produk">Lihat produk</a>
+            <a class="btn ghost" href="#desain">Makna logo</a>
+          </div>
+        </div>
+
+        <div class="hero-logo">
+          <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
+          <span class="chip c1">📖 Ilmu</span>
+          <span class="chip c2">❤️ Kasih sayang</span>
+          <span class="chip c3">🏡 Keluarga</span>
         </div>
       </section>
 
-      <section class="desain" id="desain">
-        <h2>Makna logo</h2>
-        <p class="intro">Logo Anak Mamih menggambarkan pendidikan yang tumbuh dari kasih sayang dan dukungan keluarga.</p>
+      <!-- RIBBON -->
+      <div class="ribbon" aria-hidden="true">
+        <div class="ribbon-track">
+          <span>Ilmu</span><i>✦</i><span>Kasih sayang</span><i>✦</i><span>Dukungan keluarga</span><i>✦</i><span>Tumbuh</span><i>✦</i>
+          <span>Ilmu</span><i>✦</i><span>Kasih sayang</span><i>✦</i><span>Dukungan keluarga</span><i>✦</i><span>Tumbuh</span><i>✦</i>
+        </div>
+      </div>
 
-        <dl class="makna">
-          <div>
-            <dt>Tiga sosok anak</dt>
-            <dd>Melambangkan karakter dan potensi yang beragam.</dd>
-          </div>
-          <div>
-            <dt>Buku terbuka</dt>
-            <dd>Simbol ilmu dan wawasan.</dd>
-          </div>
-          <div>
-            <dt>Tunas dari buku</dt>
-            <dd>Harapan serta potensi anak yang berkembang melalui belajar.</dd>
-          </div>
-          <div>
-            <dt>Hati di halaman buku</dt>
-            <dd>Kasih sayang menjadi bagian penting dalam proses belajar.</dd>
-          </div>
-          <div>
-            <dt>Navy dan krem</dt>
-            <dd>Navy memberi kesan tepercaya dan berwibawa, krem menghadirkan nuansa hangat.</dd>
-          </div>
-          <div>
-            <dt>Bentuk lingkaran</dt>
-            <dd>Mencerminkan kebersamaan dan dukungan yang berkelanjutan.</dd>
-          </div>
-        </dl>
+      <!-- PILAR -->
+      <section class="section" id="pilar">
+        <div class="head">
+          <h2>Tiga pilar tumbuh kembang</h2>
+          <p>Pendidikan yang tumbuh dari kasih sayang dan dukungan keluarga.</p>
+        </div>
+        <div class="grid3">
+          <article class="card pillar p-ilmu">
+            <span class="icon">📖</span>
+            <h3>Ilmu</h3>
+            <p>Buku terbuka menjadi simbol ilmu dan wawasan yang membuka jalan bagi anak.</p>
+          </article>
+          <article class="card pillar p-kasih">
+            <span class="icon">❤️</span>
+            <h3>Kasih sayang</h3>
+            <p>Hati di halaman buku menunjukkan bahwa kasih sayang adalah bagian penting dalam belajar.</p>
+          </article>
+          <article class="card pillar p-keluarga">
+            <span class="icon">🏡</span>
+            <h3>Dukungan keluarga</h3>
+            <p>Bentuk lingkaran mencerminkan kebersamaan dan dukungan yang berkelanjutan.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="produk" id="produk">
-        <h2>Produk</h2>
-        <p>Produk Anak Mamih akan ditampilkan di sini.</p>
+      <!-- MAKNA LOGO -->
+      <section class="desain" id="desain">
+        <div class="desain-in">
+          <div class="desain-left">
+            <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
+            <h2>Makna logo</h2>
+            <p>Logo Anak Mamih menggambarkan pendidikan yang tumbuh dari kasih sayang dan dukungan keluarga.</p>
+          </div>
+          <dl class="makna">
+            <div><dt>👧 Tiga sosok anak</dt><dd>Melambangkan karakter dan potensi yang beragam.</dd></div>
+            <div><dt>📖 Buku terbuka</dt><dd>Simbol ilmu dan wawasan.</dd></div>
+            <div><dt>🌱 Tunas dari buku</dt><dd>Harapan serta potensi anak yang berkembang melalui belajar.</dd></div>
+            <div><dt>❤️ Hati di halaman</dt><dd>Kasih sayang menjadi bagian penting dalam proses belajar.</dd></div>
+            <div><dt>🎨 Navy dan krem</dt><dd>Navy memberi kesan tepercaya dan berwibawa, krem menghadirkan nuansa hangat.</dd></div>
+            <div><dt>⭕ Bentuk lingkaran</dt><dd>Mencerminkan kebersamaan dan dukungan yang berkelanjutan.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- PRODUK -->
+      <section class="section" id="produk">
+        <div class="head">
+          <h2>Produk</h2>
+          <p>Contoh tampilan kartu produk. Ganti nama dan deskripsi sesuai produk kamu.</p>
+        </div>
+        <div class="grid3">
+          <article class="card product">
+            <div class="thumb t1">📚</div>
+            <h3>Nama produk 1</h3>
+            <p>Tambahkan deskripsi singkat produk di sini.</p>
+            <a class="link" href="#kontak">Tanya produk</a>
+          </article>
+          <article class="card product">
+            <div class="thumb t2">✏️</div>
+            <h3>Nama produk 2</h3>
+            <p>Tambahkan deskripsi singkat produk di sini.</p>
+            <a class="link" href="#kontak">Tanya produk</a>
+          </article>
+          <article class="card product">
+            <div class="thumb t3">🎒</div>
+            <h3>Nama produk 3</h3>
+            <p>Tambahkan deskripsi singkat produk di sini.</p>
+            <a class="link" href="#kontak">Tanya produk</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="kontak">
+        <h2>Tumbuh bersama Anak Mamih</h2>
+        <p>Ada pertanyaan atau ingin tahu lebih lanjut? Hubungi kami.</p>
+        <a class="btn light" href="#beranda">Hubungi kami</a>
       </section>
     </main>
 
     <footer>
-      <p>&copy; Anak Mamih</p>
+      <div class="foot">
+        <div class="foot-brand">
+          <img src="anakmamihlogo.png" alt="Logo Anak Mamih">
+          <strong>Anak Mamih</strong>
+        </div>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#pilar">Pilar</a></li>
+          <li><a href="#desain">Desain</a></li>
+          <li><a href="#produk">Produk</a></li>
+        </ul>
+      </div>
+      <p class="copy">&copy; Anak Mamih. Dibuat dengan kasih sayang.</p>
     </footer>
   </body>
 </html>
