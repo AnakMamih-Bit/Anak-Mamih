@@ -1,42 +1,209 @@
-html, body {
-  height: 100%;
-  background: #C8DFDB !important;
-  padding: 0px !important;
-  margin: 0px !important;
-}
-h1{color:yellow; 
-      text-align:center; 
-      font-size:40px;
-      font-family: Arial;
-   background: #4D8DBA;
-   width: 100%;
-   height:15%
-  }
-p{color:#3368A0; 
-  font-size:15px;
-  font-family: Arial;  
-  
-  }
-
-html{
-  background-color:blue;
+:root {
+  --navy: #1B3358;
+  --navy-soft: #3A5680;
+  --cream: #FFF6E3;
+  --cream-deep: #F6E7C6;
+  --sprout: #5E9C6B;
+  --heart: #E5707C;
+  --ink: #26354D;
+  --radius: 20px;
 }
 
-ul{list-style-type: none;
-   background: gray;
-   height: 70px;
-   width: 100%;
-   border: 0.5px solid black;
-   border-radius:15px;
-  }
-li{display:inLine;
-           padding:4px;
-           color: #8E9162;
-           font-size: 40px;
-          }
-img{width: 70px;
-    position: absolute !important;
-    left: 20px !important;
-    top: 30px;
-   }
-  
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Nunito", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible, .btn:focus-visible {
+  outline: 3px solid var(--sprout);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ---------- Navbar ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px clamp(16px, 5vw, 56px);
+  background: var(--navy);
+  color: var(--cream);
+}
+
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cream);
+  object-fit: cover;
+}
+.brand span {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.topbar ul {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.topbar nav a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.topbar nav a:hover {
+  background: var(--cream);
+  color: var(--navy);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: clamp(28px, 6vw, 80px);
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 96px) clamp(20px, 5vw, 56px);
+}
+
+.hero-logo img {
+  display: block;
+  width: clamp(180px, 28vw, 320px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--cream-deep);
+  border: 8px solid var(--navy);
+  box-shadow: 14px 14px 0 var(--sprout);
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: clamp(44px, 8vw, 84px);
+  line-height: 1.02;
+  color: var(--navy);
+}
+
+.lead {
+  max-width: 34ch;
+  margin: 0 0 28px;
+  font-size: clamp(18px, 2.4vw, 22px);
+  color: var(--navy-soft);
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: var(--cream);
+  font-weight: 700;
+  transition: transform 0.15s, background 0.2s;
+}
+.btn:hover { background: var(--navy-soft); transform: translateY(-2px); }
+
+/* ---------- Makna logo ---------- */
+.desain {
+  background: var(--navy);
+  color: var(--cream);
+  padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 56px);
+}
+.desain > * { max-width: 1040px; margin-left: auto; margin-right: auto; }
+
+h2 {
+  margin: 0 auto 12px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.1;
+}
+
+.intro {
+  margin-top: 0;
+  margin-bottom: 40px;
+  max-width: 56ch;
+  color: var(--cream-deep);
+}
+
+.makna {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.makna div {
+  padding-left: 18px;
+  border-left: 4px solid var(--sprout);
+}
+.makna div:nth-child(4) { border-left-color: var(--heart); }
+.makna div:nth-child(5) { border-left-color: var(--cream-deep); }
+.makna div:nth-child(6) { border-left-color: var(--sprout); }
+
+.makna dt {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.makna dd {
+  margin: 0;
+  color: var(--cream-deep);
+  font-size: 16px;
+}
+
+/* ---------- Produk ---------- */
+.produk {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 56px);
+}
+.produk h2 { color: var(--navy); margin-left: 0; }
+.produk p { margin: 0; color: var(--navy-soft); }
+
+footer {
+  padding: 24px;
+  text-align: center;
+  background: var(--cream-deep);
+  color: var(--navy-soft);
+  font-size: 15px;
+}
+footer p { margin: 0; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-logo img { margin: 0 auto; box-shadow: 10px 10px 0 var(--sprout); }
+  .lead { margin-left: auto; margin-right: auto; }
+  .brand span { display: none; }
+  .topbar { padding-top: 8px; padding-bottom: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .topbar nav a { transition: none; }
+}
