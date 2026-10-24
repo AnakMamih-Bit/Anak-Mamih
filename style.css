@@ -145,6 +145,18 @@ img { max-width: 100%; }
 .makna dt { font-family: "Fredoka", sans-serif; font-weight: 500; font-size: 20px; color: #fff; }
 .makna dd { margin: 4px 0 0; color: #D6DEEE; font-size: 16px; }
 
+/* ---------- Canva embed ---------- */
+.canva-frame {
+  position: relative; width: 100%; aspect-ratio: 16 / 9;
+  border-radius: 32px; overflow: hidden; background: #fff;
+  border: 3px solid var(--navy); box-shadow: 8px 8px 0 var(--navy);
+}
+.canva-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.canva-actions { display: flex; justify-content: center; margin-top: 36px; }
+@media (max-width: 720px) {
+  .canva-frame { aspect-ratio: 4 / 3; border-radius: 24px; }
+}
+
 /* ---------- Produk ---------- */
 .produk-wrap { margin-top: 48px; background: var(--sun-soft); border-radius: 48px 48px 0 0; }
 .product { background: #fff; border: 3px solid var(--navy); box-shadow: 8px 8px 0 var(--navy); transition: transform .2s, box-shadow .2s; }
